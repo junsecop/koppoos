@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Koppoyyyys Shop</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Koppoos Shop</h1>
+        <p>Photostat, Lamination, Scanning, Printout</p>
+    </header>
+
+    <!-- Hamburger Menu Button for mobile -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+        &#9776; <!-- Hamburger icon -->
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav id="menu" class="hide">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="content">
+        <div class="grid-container">
+            <div class="grid-item">Photostat</div>
+            <div class="grid-item">Lamination</div>
+            <div class="grid-item">Color Print</div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Koppoyyyys Shop. All rights reserved.
+    </footer>
+
+    <!-- Add JavaScript to toggle menu visibility -->
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.classList.contains('hide')) {
+                menu.classList.remove('hide');
+                menu.classList.add('show');
+            } else {
+                menu.classList.remove('show');
+                menu.classList.add('hide');
+            }
+        }
+    </script>
+
+</body>
+</html>
