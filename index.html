@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Koppoyyyys Shop</title>
+    <title>Koppoos Shop</title>
     <!-- Link to External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,7 +12,7 @@
 
     <header>
         <h1>Koppoos Shop</h1>
-        <p>Photostat, Lamination, Scanning, Printout</p>
+        
     </header>
 
     <!-- Hamburger Menu Button for mobile -->
@@ -22,37 +22,33 @@
 
     <!-- Navigation Menu -->
     <nav id="menu" class="hide">
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <!-- <a href="#">Home</a> -->
+        <!-- <a href="#">Services</a> -->
+        <a href="#">Location</a>
+        <a href="contact.html">Contact</a>
     </nav>
-
+    <!-- contxt id is to use website/shop products and their 
+                feactures navigation in home page -->
+        <div id="contxt">
+            <p>Photostat, Lamination, Scanning, Printout</p>
+        </div>
     <div class="content">
         <div class="grid-container">
-            <div class="grid-item">Photostat</div>
-            <div class="grid-item">Lamination</div>
-            <div class="grid-item">Color Print</div>
-        </div>
+                <div class="grid-item"><a href="color.html" style="text-decoration: none;"> Photostat </a>
+            </div>
+                <div class="grid-item"><a href="color.html" style="text-decoration: none;"> Lamination </a>
+            </div>
+                <div class="grid-item"><a href="color.html" style="text-decoration: none;"> Color Print</a>
+
     </div>
+    
 
     <footer>
         &copy; 2024 Koppoyyyys Shop. All rights reserved.
     </footer>
 
     <!-- Add JavaScript to toggle menu visibility -->
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById('menu');
-            if (menu.classList.contains('hide')) {
-                menu.classList.remove('hide');
-                menu.classList.add('show');
-            } else {
-                menu.classList.remove('show');
-                menu.classList.add('hide');
-            }
-        }
-    </script>
+    <script src="scripts.js"></script>
 
 </body>
 </html>
