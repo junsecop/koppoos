@@ -76,6 +76,8 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    text-decoration: none;
+
 }
 
 .grid-item {
@@ -90,15 +92,17 @@ nav a:hover {
 .grid-item:hover {
     transform: translateY(-5px);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    
 }
 
 footer {
     background-color: #333;
     color: white;
-    text-align: center;
+    text-align:center;
     padding: 20px;
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
+    mix-blend-mode:auto;
     width: 100%;
     box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -172,4 +176,92 @@ footer {
     nav a {
         font-size: 16px;
     }
+}
+#contxt {
+    text-align: center;
+    font-size:23px;
+    padding: 30px;
+    color: #493628;
+    background-color: #D6C0B3;
+    padding:10px;
+    background-size: auto;
+    text-overflow: unset;
+
+}
+.info {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    /* margin-top: center; */
+    margin-top: 210px; 
+    max-height: fit-content   
+}
+
+.box {
+    margin-bottom:center;
+    min-width:center;
+    margin-top: center;
+}
+
+h5 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.row.social {
+    margin: 10px 0;
+}
+
+.row.social a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #4CAF50;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.row.social a:hover {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+caption {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+.price{
+    margin-top: 40px;
 }
